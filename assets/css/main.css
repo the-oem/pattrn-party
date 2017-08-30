@@ -1,0 +1,146 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 60px;
+  color: #FFF;
+  border: 1 solid black;
+  background-color: #331E36;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+nav>div>span {
+  color: #6EA4BF;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-content>section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-tabs {
+  min-width: 320px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  background: #fff;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.tab-content-container {
+  margin: 0 0 5px;
+  padding: 10px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.tab-content-title {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.tab-content-body {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+hr {
+  margin: 2px;
+}
+
+.tab-image {
+  float: left;
+  height: 250px;
+  width: 250px;
+  margin: 0 10px 15px 0;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  width: 23%;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+  background-color: #e5e5e5;
+  font-weight: 600;
+}
+
+label:before {
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+label:hover {
+  cursor: pointer;
+  color: #888;
+}
+
+input:checked+label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid #6EA4BF;
+  border-bottom: 1px solid #fff;
+  background-color: #FFF;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4 {
+  display: block;
+  border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
