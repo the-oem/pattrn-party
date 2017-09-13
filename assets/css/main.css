@@ -1,3 +1,14 @@
+/*
+Color Pallette
+Header Accent: #34D1D1
+Header background: #2F2235
+Code buttons: #3F3244
+Body background: #F2F2F2
+#D1D2D3
+#666666
+#000000
+*/
+
 *,
 *:before,
 *:after {
@@ -25,13 +36,13 @@ nav {
   padding: 15px 30px;
   color: #FFF;
   border: 1 solid black;
-  background-color: #331E36;
+  background-color: #2F2235;
   font-size: 30px;
   font-weight: 300;
 }
 
 nav>div>span {
-  color: #6EA4BF;
+  color: #34D1D1;
 }
 
 main {
@@ -47,7 +58,7 @@ main {
 .section-content>section {
   display: none;
   padding: 20px 0 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #D1D2D3;
 }
 
 .section {
@@ -94,7 +105,7 @@ hr {
   height: 250px;
   width: 250px;
   margin: 0 15px 15px 0;
-  border: 1px solid #ddd;
+  border: 1px solid #D1D2D3;
 }
 
 .view-code-lnk {
@@ -122,9 +133,9 @@ label {
   margin: 0 0 -1px;
   padding: 15px 25px;
   text-align: center;
-  color: #bbb;
+  color: #666666;
   border: 1px solid transparent;
-  background-color: #e5e5e5;
+  background-color: #D1D2D3;
   font-weight: 600;
 }
 
