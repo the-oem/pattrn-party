@@ -277,7 +277,7 @@ input:checked+label {
 
 .search-input {
   background-color: #fffdfd;
-  background-image: url('../img/magnifying-glass.svg');
+  background-image: url('https://the-oem.github.io/pattrn-party/assets/img/magnifying-glass.svg');
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: 5px;
