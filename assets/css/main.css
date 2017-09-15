@@ -1,3 +1,14 @@
+/*
+Color Pallette
+Header Accent: #34D1D1
+Header background: #2F2235
+Code buttons: #3F3244
+Body background: #F2F2F2
+#D1D2D3
+#666666
+#000000
+*/
+
 *,
 *:before,
 *:after {
@@ -12,7 +23,7 @@ body {
   flex-direction: column;
   width: 100%;
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 nav {
@@ -25,13 +36,13 @@ nav {
   padding: 15px 30px;
   color: #FFF;
   border: 1 solid black;
-  background-color: #331E36;
+  background-color: #2F2235;
   font-size: 30px;
   font-weight: 300;
 }
 
 nav>div>span {
-  color: #6EA4BF;
+  color: #34D1D1;
 }
 
 main {
@@ -47,7 +58,7 @@ main {
 .section-content>section {
   display: none;
   padding: 20px 0 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #D1D2D3;
 }
 
 .section {
@@ -94,7 +105,7 @@ hr {
   height: 250px;
   width: 250px;
   margin: 0 15px 15px 0;
-  border: 1px solid #ddd;
+  border: 1px solid #D1D2D3;
 }
 
 .view-code-lnk {
@@ -112,7 +123,7 @@ hr {
   text-decoration: none;
 }
 
-input {
+input[type=radio] {
   display: none;
 }
 
@@ -122,9 +133,9 @@ label {
   margin: 0 0 -1px;
   padding: 15px 25px;
   text-align: center;
-  color: #bbb;
+  color: #666666;
   border: 1px solid transparent;
-  background-color: #e5e5e5;
+  background-color: #D1D2D3;
   font-weight: 600;
 }
 
@@ -217,6 +228,71 @@ input:checked+label {
   grid-row: 3;
 }
 
+
+/*HEADER BAR*/
+
+.header-nav {
+  background-color: #D1D2D3;
+  width: 700px;
+  min-width: 320px;
+  max-width: 700px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.nav-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  color: #000000;
+  width: 100%;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.nav-link {
+  padding: 0 10px;
+}
+
+.more {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.search-input {
+  background-color: #fffdfd;
+  background-image: url('../img/magnifying-glass.svg');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: 5px;
+  height: 40px;
+  width: 130px;
+  border: none;
+  font-size: 16px;
+  border: 1px solid #666666;
+  padding-left: 40px;
+}
+
+.menu-btn {
+  display: none;
+}
+
 @media screen and (max-width: 700px) {
   .flexible-cards {
     grid-template-columns: 1fr 1fr;
@@ -249,6 +325,13 @@ input:checked+label {
   #seven {
     grid-column: span 2;
     grid-row: 5;
+  }
+  /*NAVIGATION*/
+  .header-nav {
+    width: 100%;
+  }
+  .header-bar {
+    width: 100vw;
   }
 }
 
@@ -300,10 +383,43 @@ input:checked+label {
     justify-content: center;
     font-size: 24px;
   }
+  .nav3,
+  .nav2 {
+    display: none;
+  }
+  .more {
+    display: inline;
+  }
+  .mobile-nav {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 400px) {
   label {
     padding: 15px;
+  }
+  .nav1,
+  .more {
+    display: none;
+  }
+  .menu-btn {
+    display: inline;
+    color: #666666;
+    cursor: pointer;
+  }
+  .search-input {
+    width: 100%;
+  }
+  #mobileSearch {
+    display: inline;
+  }
+  #desktopSearch {
+    display: none;
+  }
+  .mobile-nav-link {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
   }
 }
